@@ -45,21 +45,28 @@ logSizeC.text(towerSizeC)
 
 //initial conditions set. now for event actions
 
-
+var nextTower = $(".selected")
 
 anyTower.on("click", function() {
+  if (anyTower.hasClass( "unselected")) {
   $(this).css("border" , "10px solid black")
-  var thisTopDisc = $(this).find("li").first()
+  thisTopDisc = $(this).find("li").first()
   thisTopDisc.css("color" , "black")
-  anyTower.on("click", function() {
+  anyTower.addClass("selected").removeClass("unselected")
+  console.log("firstclick")
+}
+  else if (anyTower.hasClass ("selected")) {
+
     var newTower = $(this).find("ul")
     newTower.prepend(thisTopDisc)
     discSelect.css("color" , "white")
     anyTower.css("border" , "none")
-    anyTower.off('click');
-    })
-    anyTower.on()
-})
+    anyTower.removeClass("selected").addClass("unselected")
+    console.log("secondclick")
+    }
+  })
+
+
 
 
 
