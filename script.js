@@ -64,7 +64,7 @@ $(document).on("keydown" , function(event) {
   var counter = 0
   var endGame
   var discWidth
-  var discNumber = 20
+  var discNumber = 5
   var baseDiscWidth = 240
   var moveCounter = 0
   var timeX = 0
