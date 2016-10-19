@@ -11,42 +11,44 @@
   <title>Tower of Hanoi</title>
 </head>
 <body>
-<div id="wrapper">
+
+
+
+  <header class='wrapper'>
+     <div id='errormessage'></div>
+     <div id='timer'> TIMER:00:00 </div>
+     <div id='movenumber'> MOVE: </div>
+
+  </header>
+
+<div id='title'> TOWER OF HANOI <br> <p id="startGame">press enter</p> </div>
+<p id="inputText"></p>
+
+<div id="wrapper" class='wrapper'>
+
 
   <div id="tower1" class="tower unselected">
-    <ul class="discs">
-      
-    </ul>
+    <div class="discList">
+
+    </div>
   </div>
 
   <div id="tower2" class="tower unselected">
-    <ul class="discs">
+    <div class="discList">
 
 
-    </ul>
+    </div>
   </div>
 
   <div id="tower3" class ="tower unselected" >
-    <ul class="discs">
+    <div class="discList">
 
-    </ul>
+    </div>
   </div>
 
 </div>
 
-<div id="infoPanel">
-  <div>
-    <p>Tower 1 size: </p> <p id="tower1size"></p>
-    <p>Tower 1 value: </p> <p id="tower1value"></p>
-  </div>
-  <div>
-    <p>Tower 2 size: </p> <p id="tower2size"></p>
-    <p>Tower 2 value: </p> <p id="tower2value"></p>
-  </div>
-  <div>
-    <p>Tower 3 size: </p> <p id="tower3size"></p>
-    <p>Tower 3 value: </p><p id="tower3value"></p>
-  </div>
-</div>
+
+
 </body>
 </html>

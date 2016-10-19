@@ -1,46 +1,146 @@
+@font-face {
+  font-family: Retro;
+  src: url(Alt_Retro_Light.ttf)
+}
+
+@font-face {
+  font-family: RetroBold;
+  src: url(Alt_Retro_Bold.ttf)
+}
+
+html {
+  height:100%;
+  width:100%;
+}
+
 body {
+min-height:100%;
+margin:auto;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background-color:black;
+
+}
+
+#title {
+  color:purple;
+  font-family: Retro;
+  font-size: 200px;
+  text-align:center;
+}
+
+#startGame {
+  font-size:50px;
+  color:#FF0080;
+  font-family:RetroBold;
+}
+
+#inputText{
+  font-size:50px;
+  color:#FF0080;
+  font-family:RetroBold;
+}
+input {
+  background-color:black;
+  color:#FF0080;
+  border: 2px solid #FF0080;
+  border-radius:8px;
+  font-family:Courier;
+  height:50px;
+  font-size:50px;
+  width: 85px;
 
 }
 
 #wrapper {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: space-around;
   width:100%;
   height:800px;
-  background-color: grey;
+  margin:auto;
+  background-color: black;
+}
+
+.wrapper {
+  display:none;
 }
 .tower {
 
-  width:100px;
+  width:70px;
   text-align:center;
-  padding:20px;
-  margin-top:80px
+  margin-top:400px;
+
 
 }
 
-#infoPanel {
+header {
   display:flex;
   flex-direction:row;
-  background-color: pink;
+  align-items:flex-end;
+  background-color: black;
+  color:red;
+  font-size:40px;
   width:100%;
-  height:160px;
+  height:150px;
   justify-content:space-around;
+  border: 5px solid white;
+  border-radius: 10px;
+
+}
+
+#errormessage {
+  font-family:Courier;
+  color:red;
+  margin-left:-50px;
+}
+
+header div {
+    font-family: Courier;
+}
+
+.disc {
+
+  width:240px;
+  border:4px solid black;
+  background-color:white;
+  position:static;
+  border-radius:25px;
+  height:80px;
+}
+
+.discList {
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-end;
+  height:100%;
+  width:70px;
+  margin-bottom:300px;
+  align-items:center;
 
 }
 
 #tower1 {
-  background-color:blue;
-  color:white;
+  background-color:pink;
+  color:black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
 
 }
 
 #tower2 {
-  background-color:red;
-  color:white;
+  background-color:pink;
+  color:black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 #tower3 {
-  background-color:green;
-  color:white;
+  background-color:pink;
+  color:black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
